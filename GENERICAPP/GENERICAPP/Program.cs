@@ -31,7 +31,7 @@ namespace GENERICAPP
         {
             foreach (T item in valuse)
             {
-                Console.WriteLine(item +" ,");
+                Console.WriteLine(item +", ");
             }
             Console.WriteLine();
         }
