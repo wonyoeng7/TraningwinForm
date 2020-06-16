@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{781FE7E5-CEC8-4D14-B0AE-12F2B6268144}</ProjectGuid>
+    <ProjectGuid>{8BCE2E44-AC06-43E3-9CE7-570CB05AE4EE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LoginApp</RootNamespace>
-    <AssemblyName>LoginApp</AssemblyName>
+    <RootNamespace>CheckListBoxApp</RootNamespace>
+    <AssemblyName>CheckListBoxApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
