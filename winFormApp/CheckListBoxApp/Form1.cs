@@ -36,5 +36,14 @@ namespace CheckListBoxApp
         {
 
         }
+
+        private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if(e.NewValue == CheckState.Checked && checkedListBox1.CheckedItems.Count >= 3)
+            {
+                e.NewValue = CheckState.Unchecked;
+                MessageBox.Show("최대 선택 개수는 3개입니다.");
+            }
+        }
     }
 }

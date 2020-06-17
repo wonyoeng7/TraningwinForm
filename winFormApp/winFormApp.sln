@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFileDlgApp", "OpenFileD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenuApp", "MainMenuApp\MainMenuApp.csproj", "{C0BDB6DD-361E-463B-AF2E-2B6E6A8E7AFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewApp", "ListViewApp\ListViewApp.csproj", "{5AD54D93-701C-4E74-97DF-F29BC7F2E342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewApp", "TreeViewApp\TreeViewApp.csproj", "{9E5A0320-9754-4D73-A65C-5A1295FD9028}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{C0BDB6DD-361E-463B-AF2E-2B6E6A8E7AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0BDB6DD-361E-463B-AF2E-2B6E6A8E7AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0BDB6DD-361E-463B-AF2E-2B6E6A8E7AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AD54D93-701C-4E74-97DF-F29BC7F2E342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD54D93-701C-4E74-97DF-F29BC7F2E342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD54D93-701C-4E74-97DF-F29BC7F2E342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD54D93-701C-4E74-97DF-F29BC7F2E342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E5A0320-9754-4D73-A65C-5A1295FD9028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E5A0320-9754-4D73-A65C-5A1295FD9028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E5A0320-9754-4D73-A65C-5A1295FD9028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E5A0320-9754-4D73-A65C-5A1295FD9028}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
