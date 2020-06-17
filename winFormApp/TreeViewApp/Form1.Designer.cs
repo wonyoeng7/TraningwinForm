@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("베토벤", 2, 2);
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("슈베르트", 2, 2);
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("모짜르트", 2, 2);
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("클래식", new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14,
-            treeNode15});
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("노드6", 2, 2);
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("노드7", 2, 2);
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("노드8", 2, 2);
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("팝", new System.Windows.Forms.TreeNode[] {
-            treeNode17,
-            treeNode18,
-            treeNode19});
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("노드9", 2, 2);
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("노드10", 2, 2);
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("노드11", 2, 2);
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("가요", new System.Windows.Forms.TreeNode[] {
-            treeNode21,
-            treeNode22,
-            treeNode23});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("베토벤", 2, 2);
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("슈베르트", 2, 2);
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("모짜르트", 2, 2);
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("클래식", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("노드6", 2, 2);
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("노드7", 2, 2);
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("노드8", 2, 2);
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("팝", new System.Windows.Forms.TreeNode[] {
+            treeNode5,
+            treeNode6,
+            treeNode7});
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("노드9", 2, 2);
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("노드10", 2, 2);
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("노드11", 2, 2);
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("가요", new System.Windows.Forms.TreeNode[] {
+            treeNode9,
+            treeNode10,
+            treeNode11});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -69,58 +69,66 @@
             this.treeView1.ImageList = this.imageList1;
             this.treeView1.Location = new System.Drawing.Point(12, 33);
             this.treeView1.Name = "treeView1";
-            treeNode13.ImageIndex = 2;
-            treeNode13.Name = "Node_classic_0";
-            treeNode13.SelectedImageIndex = 2;
-            treeNode13.Text = "베토벤";
-            treeNode14.ImageIndex = 2;
-            treeNode14.Name = "Node_classic_1";
-            treeNode14.SelectedImageIndex = 2;
-            treeNode14.Text = "슈베르트";
-            treeNode15.ImageIndex = 2;
-            treeNode15.Name = "Node_classic_2";
-            treeNode15.SelectedImageIndex = 2;
-            treeNode15.Text = "모짜르트";
-            treeNode16.Name = "Node0";
-            treeNode16.SelectedImageIndex = 1;
-            treeNode16.Text = "클래식";
-            treeNode17.ImageIndex = 2;
-            treeNode17.Name = "노드6";
-            treeNode17.SelectedImageIndex = 2;
-            treeNode17.Text = "노드6";
-            treeNode18.ImageIndex = 2;
-            treeNode18.Name = "노드7";
-            treeNode18.SelectedImageIndex = 2;
-            treeNode18.Text = "노드7";
-            treeNode19.ImageIndex = 2;
-            treeNode19.Name = "노드8";
-            treeNode19.SelectedImageIndex = 2;
-            treeNode19.Text = "노드8";
-            treeNode20.Name = "Node1";
-            treeNode20.SelectedImageIndex = 1;
-            treeNode20.Text = "팝";
-            treeNode21.ImageIndex = 2;
-            treeNode21.Name = "노드9";
-            treeNode21.SelectedImageIndex = 2;
-            treeNode21.Text = "노드9";
-            treeNode22.ImageIndex = 2;
-            treeNode22.Name = "노드10";
-            treeNode22.SelectedImageIndex = 2;
-            treeNode22.Text = "노드10";
-            treeNode23.ImageIndex = 2;
-            treeNode23.Name = "노드11";
-            treeNode23.SelectedImageIndex = 2;
-            treeNode23.Text = "노드11";
-            treeNode24.Name = "Node2";
-            treeNode24.SelectedImageIndex = 1;
-            treeNode24.Text = "가요";
+            treeNode1.ImageIndex = 2;
+            treeNode1.Name = "Node_classic_0";
+            treeNode1.SelectedImageIndex = 2;
+            treeNode1.Text = "베토벤";
+            treeNode2.ImageIndex = 2;
+            treeNode2.Name = "Node_classic_1";
+            treeNode2.SelectedImageIndex = 2;
+            treeNode2.Text = "슈베르트";
+            treeNode3.ImageIndex = 2;
+            treeNode3.Name = "Node_classic_2";
+            treeNode3.SelectedImageIndex = 2;
+            treeNode3.Text = "모짜르트";
+            treeNode4.Name = "Node0";
+            treeNode4.SelectedImageIndex = 1;
+            treeNode4.Text = "클래식";
+            treeNode5.ImageIndex = 2;
+            treeNode5.Name = "노드6";
+            treeNode5.SelectedImageIndex = 2;
+            treeNode5.Text = "노드6";
+            treeNode6.ImageIndex = 2;
+            treeNode6.Name = "노드7";
+            treeNode6.SelectedImageIndex = 2;
+            treeNode6.Text = "노드7";
+            treeNode7.ImageIndex = 2;
+            treeNode7.Name = "노드8";
+            treeNode7.SelectedImageIndex = 2;
+            treeNode7.Text = "노드8";
+            treeNode8.Name = "Node1";
+            treeNode8.SelectedImageIndex = 1;
+            treeNode8.Text = "팝";
+            treeNode9.ImageIndex = 2;
+            treeNode9.Name = "노드9";
+            treeNode9.SelectedImageIndex = 2;
+            treeNode9.Text = "노드9";
+            treeNode10.ImageIndex = 2;
+            treeNode10.Name = "노드10";
+            treeNode10.SelectedImageIndex = 2;
+            treeNode10.Text = "노드10";
+            treeNode11.ImageIndex = 2;
+            treeNode11.Name = "노드11";
+            treeNode11.SelectedImageIndex = 2;
+            treeNode11.Text = "노드11";
+            treeNode12.Name = "Node2";
+            treeNode12.SelectedImageIndex = 1;
+            treeNode12.Text = "가요";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode16,
-            treeNode20,
-            treeNode24});
+            treeNode4,
+            treeNode8,
+            treeNode12});
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.Size = new System.Drawing.Size(544, 364);
             this.treeView1.TabIndex = 0;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "folder_close.png");
+            this.imageList1.Images.SetKeyName(1, "수정됨_folder_open.png");
+            this.imageList1.Images.SetKeyName(2, "dvd.png");
             // 
             // textBox1
             // 
@@ -154,14 +162,6 @@
             this.button2.Text = "노드제거";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "folder_close.png");
-            this.imageList1.Images.SetKeyName(1, "수정됨_folder_open.png");
-            this.imageList1.Images.SetKeyName(2, "dvd.png");
             // 
             // dateTimePicker1
             // 
