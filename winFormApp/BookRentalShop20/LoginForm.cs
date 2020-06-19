@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Diagnostics;
 using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
@@ -67,34 +66,51 @@ namespace BookRentalShop20
 
             string strUerID = string.Empty;
 
-            using (SqlConnection conn = new SqlConnection(strConnString))
+            try
             {
+                using (SqlConnection conn = new SqlConnection(strConnString))
+                {
 
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText = "SELECT userID FROM userTbl " + "WHERE userID = @userID " + "AND password = @password";
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandText = "SELECT userID FROM userTbl " + "WHERE userID = @userID " + "AND password = @password";
 
-                SqlParameter parmuserID = new SqlParameter("@userID", System.Data.SqlDbType.VarChar, 12);
-                parmuserID.Value = TxtUserID.Text;
-                cmd.Parameters.Add(parmuserID);
+                    SqlParameter parmuserID = new SqlParameter("@userID", System.Data.SqlDbType.VarChar, 12);
+                    parmuserID.Value = TxtUserID.Text;
+                    cmd.Parameters.Add(parmuserID);
 
-                SqlParameter parmPassword = new SqlParameter("@password", System.Data.SqlDbType.VarChar, 20);
-                parmPassword.Value = TxtPassword.Text;
-                cmd.Parameters.Add(parmPassword);
+                    SqlParameter parmPassword = new SqlParameter("@password", System.Data.SqlDbType.VarChar, 20);
+                    parmPassword.Value = TxtPassword.Text;
+                    cmd.Parameters.Add(parmPassword);
 
-                SqlDataReader reader = cmd.ExecuteReader();
-                reader.Read();
-                strUerID = reader["userID"].ToString();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    strUerID = reader["userID"].ToString() != null ? reader["userID"].ToString() : "";
 
-                MetroMessageBox.Show(this, "접속성공", "로그인");
-                Debug.WriteLine("On the Debug");
+                    if (strUerID != "")
+                    {
+                        MetroMessageBox.Show(this, "접속성공", "로그인 성공");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MetroMessageBox.Show(this, "접속실패", "로그인 실패", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
 
+                    //Debug.WriteLine("On the Debug");
 
-
-
+                }
 
             }
+
+            catch (Exception ex)
+            {
+                MetroMessageBox.Show(this,$"Error : {ex.StackTrace}", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;               
+            }
+            
+            
         }
     }
 }
