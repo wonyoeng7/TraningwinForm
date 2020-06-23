@@ -68,7 +68,7 @@ namespace BookRentalShop20
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(strConnString))
+                using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
                 {
 
                     conn.Open();
@@ -90,6 +90,7 @@ namespace BookRentalShop20
 
                     if (strUerID != "")
                     {
+                        Commons.LOGINUSERID = strUerID;
                         MetroMessageBox.Show(this, "접속성공", "로그인 성공");
                         this.Close();
                     }
