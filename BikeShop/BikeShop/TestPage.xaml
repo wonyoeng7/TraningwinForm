@@ -7,8 +7,9 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="TestPage">
-
+    
     <Grid >
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -21,7 +22,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         
-        <Button Content="I'm 1 Button" Grid.Column="0" Grid.Row="0" Margin="10" />
+        <!--<Button Content="I'm 1 Button" Grid.Column="0" Grid.Row="0" Margin="10" />
         <ComboBox Grid.Row="0" Grid.Row="1" Grid.Column="1" Margin="10" ScrollViewer.VerticalScrollBarVisibility="Visible"></ComboBox>
         <TextBlock Text="Element 1" />
         <TextBlock Text="Element 2" />
@@ -31,13 +32,39 @@
         </GroupBox>
         <Button Content="I'm 3 Button" Grid.Column="0" Grid.Row="2" Margin="10"/>
         <Button Content="I'm 4 Button" Grid.Column="1" Grid.Row="0" Margin="10"/>
-        <!--<Button Content="I'm 5 Button" Grid.Column="1" Grid.Row="1" Margin="10"/>-->
+        --><!--<Button Content="I'm 5 Button" Grid.Column="1" Grid.Row="1" Margin="10"/>--><!--
         <Button Content="I'm 6 Button" Grid.Column="1" Grid.Row="2" Margin="10"/>
         <Button Content="I'm 7 Button" Grid.Column="2" Grid.Row="0" Margin="10"/>
         <Button Content="I'm 8 Button" Grid.Column="2" Grid.Row="1" Margin="10"/>
-        <Button Content="I'm 9 Button" Grid.Column="2" Grid.Row="2" Margin="10"/>
+        <Button Content="I'm 9 Button" Grid.Column="2" Grid.Row="2" Margin="10"/>-->
 
+        <!--<StackPanel>
 
-
+            <Slider x:Name="slider" Maximum="100" Value="10"/>
+            <ProgressBar Value="{Binding Value, ElementName=slider}" Height="20" Margin="0,0,0.2,0"/>
+            <TextBlock Text="{Binding Value, ElementName=slider}" TextAlignment="Center"/>
+            
+        </StackPanel>-->
+        <StackPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="3">
+            <ComboBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <ComboBox.ItemTemplate>
+                <ItemContainerTemplate>
+                    <StackPanel>
+                        <TextBlock Text="Speed"/>
+                            <TextBox Text="{Binding Speed}"/>
+                            <Slider Value="{Binding Speed}" Maximum="100"/>
+                        <TextBlock Text="Color"/>
+                        <Border Height="10">
+                            <Border.Background>
+                                <SolidColorBrush Color="{Binding Color}"/>
+                            </Border.Background>
+                        </Border>
+                        <TextBox Text="{Binding Color}"/>
+                    </StackPanel>
+                </ItemContainerTemplate>
+                </ComboBox.ItemTemplate>
+              
+        </ComboBox>
+        </StackPanel>
     </Grid>
 </Page>

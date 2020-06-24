@@ -33,9 +33,10 @@
             this.MnuItemDivMng = new System.Windows.Forms.ToolStripMenuItem();
             this.사용자관리UToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.회원관리MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.책관리BToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.LblUserId = new System.Windows.Forms.Label();
-            this.책관리BToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.대여관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,8 @@
             this.MnuItemDivMng,
             this.사용자관리UToolStripMenuItem,
             this.회원관리MToolStripMenuItem,
-            this.책관리BToolStripMenuItem});
+            this.책관리BToolStripMenuItem,
+            this.대여관리ToolStripMenuItem});
             this.MnuMain.Name = "MnuMain";
             this.MnuMain.Size = new System.Drawing.Size(107, 24);
             this.MnuMain.Text = "메인관리(&M)";
@@ -82,6 +84,13 @@
             this.회원관리MToolStripMenuItem.Text = "회원관리(&M)";
             this.회원관리MToolStripMenuItem.Click += new System.EventHandler(this.회원관리MToolStripMenuItem_Click);
             // 
+            // 책관리BToolStripMenuItem
+            // 
+            this.책관리BToolStripMenuItem.Name = "책관리BToolStripMenuItem";
+            this.책관리BToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.책관리BToolStripMenuItem.Text = "책관리(&B)";
+            this.책관리BToolStripMenuItem.Click += new System.EventHandler(this.책관리BToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -99,12 +108,12 @@
             this.LblUserId.Size = new System.Drawing.Size(0, 15);
             this.LblUserId.TabIndex = 3;
             // 
-            // 책관리BToolStripMenuItem
+            // 대여관리ToolStripMenuItem
             // 
-            this.책관리BToolStripMenuItem.Name = "책관리BToolStripMenuItem";
-            this.책관리BToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.책관리BToolStripMenuItem.Text = "책관리(&B)";
-            this.책관리BToolStripMenuItem.Click += new System.EventHandler(this.책관리BToolStripMenuItem_Click);
+            this.대여관리ToolStripMenuItem.Name = "대여관리ToolStripMenuItem";
+            this.대여관리ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.대여관리ToolStripMenuItem.Text = "대여관리";
+            this.대여관리ToolStripMenuItem.Click += new System.EventHandler(this.대여관리ToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -140,6 +149,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LblUserId;
         private System.Windows.Forms.ToolStripMenuItem 책관리BToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 대여관리ToolStripMenuItem;
     }
 }
 

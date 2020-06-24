@@ -50,6 +50,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LblMouseLocation = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.대여관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip2.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -96,7 +97,8 @@
             this.열기OToolStripMenuItem,
             this.닫기CToolStripMenuItem,
             this.저장SToolStripMenuItem,
-            this.종료XToolStripMenuItem});
+            this.종료XToolStripMenuItem,
+            this.대여관리ToolStripMenuItem});
             this.toolStripMenuItem52.Name = "toolStripMenuItem52";
             this.toolStripMenuItem52.Size = new System.Drawing.Size(70, 24);
             this.toolStripMenuItem52.Text = "파일(&F)";
@@ -105,7 +107,7 @@
             // 
             this.새파일NToolStripMenuItem.Name = "새파일NToolStripMenuItem";
             this.새파일NToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.새파일NToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.새파일NToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.새파일NToolStripMenuItem.Text = "새 파일(N)";
             this.새파일NToolStripMenuItem.Click += new System.EventHandler(this.새파일NToolStripMenuItem_Click);
             // 
@@ -113,27 +115,27 @@
             // 
             this.열기OToolStripMenuItem.Name = "열기OToolStripMenuItem";
             this.열기OToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.열기OToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.열기OToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.열기OToolStripMenuItem.Text = "열기(O)";
             this.열기OToolStripMenuItem.Click += new System.EventHandler(this.열기OToolStripMenuItem_Click);
             // 
             // 닫기CToolStripMenuItem
             // 
             this.닫기CToolStripMenuItem.Name = "닫기CToolStripMenuItem";
-            this.닫기CToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.닫기CToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.닫기CToolStripMenuItem.Text = "닫기(C)";
             // 
             // 저장SToolStripMenuItem
             // 
             this.저장SToolStripMenuItem.Name = "저장SToolStripMenuItem";
             this.저장SToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.저장SToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.저장SToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.저장SToolStripMenuItem.Text = "저장(S)";
             // 
             // 종료XToolStripMenuItem
             // 
             this.종료XToolStripMenuItem.Name = "종료XToolStripMenuItem";
-            this.종료XToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.종료XToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.종료XToolStripMenuItem.Text = "종료(X)";
             this.종료XToolStripMenuItem.Click += new System.EventHandler(this.종료XToolStripMenuItem_Click);
             // 
@@ -228,6 +230,13 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // 대여관리ToolStripMenuItem
+            // 
+            this.대여관리ToolStripMenuItem.Name = "대여관리ToolStripMenuItem";
+            this.대여관리ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.대여관리ToolStripMenuItem.Text = "대여관리";
+            this.대여관리ToolStripMenuItem.Click += new System.EventHandler(this.대여관리ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -272,6 +281,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LblMouseLocation;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem 대여관리ToolStripMenuItem;
     }
 }
 

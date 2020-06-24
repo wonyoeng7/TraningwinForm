@@ -98,5 +98,10 @@ namespace MainMenuApp
         {
 
         }
+
+        private void 대여관리ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
