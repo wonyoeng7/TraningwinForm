@@ -192,5 +192,10 @@ namespace BookRentalShop20
                 cmd.ExecuteNonQuery();
             }
         }
+
+        private void GrdDivTbl_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

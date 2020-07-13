@@ -46,8 +46,6 @@ namespace BookRentalShop20
             clearTextControls();
 
             mode = "INSERT";    //신규는 INSERT
-
-
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -311,6 +309,11 @@ namespace BookRentalShop20
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }

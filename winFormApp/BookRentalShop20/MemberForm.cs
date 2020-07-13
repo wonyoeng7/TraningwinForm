@@ -46,10 +46,10 @@ namespace BookRentalShop20
                 GrdMemberTbl.DataSource = ds;
                 GrdMemberTbl.DataMember = "membertbl";
 
-            }
+            }   
 
             //throw new NotImplementedException();
-        }
+        }   
 
         private void GrdDivTbl_CellClick(object sender, System.Windows.Forms.DataGridViewCellEventArgs e)
         {

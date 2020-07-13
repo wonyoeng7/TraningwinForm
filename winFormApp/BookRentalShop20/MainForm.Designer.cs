@@ -34,9 +34,9 @@
             this.사용자관리UToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.회원관리MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.책관리BToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.대여관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.LblUserId = new System.Windows.Forms.Label();
-            this.대여관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,6 +91,13 @@
             this.책관리BToolStripMenuItem.Text = "책관리(&B)";
             this.책관리BToolStripMenuItem.Click += new System.EventHandler(this.책관리BToolStripMenuItem_Click);
             // 
+            // 대여관리ToolStripMenuItem
+            // 
+            this.대여관리ToolStripMenuItem.Name = "대여관리ToolStripMenuItem";
+            this.대여관리ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.대여관리ToolStripMenuItem.Text = "대여관리";
+            this.대여관리ToolStripMenuItem.Click += new System.EventHandler(this.대여관리ToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -107,13 +114,6 @@
             this.LblUserId.Name = "LblUserId";
             this.LblUserId.Size = new System.Drawing.Size(0, 15);
             this.LblUserId.TabIndex = 3;
-            // 
-            // 대여관리ToolStripMenuItem
-            // 
-            this.대여관리ToolStripMenuItem.Name = "대여관리ToolStripMenuItem";
-            this.대여관리ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.대여관리ToolStripMenuItem.Text = "대여관리";
-            this.대여관리ToolStripMenuItem.Click += new System.EventHandler(this.대여관리ToolStripMenuItem_Click);
             // 
             // MainForm
             // 

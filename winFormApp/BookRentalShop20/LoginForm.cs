@@ -65,7 +65,7 @@ namespace BookRentalShop20
             }
 
             string strUerID = string.Empty;
-
+  
             try
             {
                 using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))

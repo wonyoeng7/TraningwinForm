@@ -33,6 +33,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.bookIdx = new System.Windows.Forms.ComboBox();
+            this.memberIdx = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,10 +50,6 @@
             this.GrdRentalTbl = new MetroFramework.Controls.MetroGrid();
             this.bOOKRENTALSHOPDBDataSet = new BookRentalShop20.BOOKRENTALSHOPDBDataSet();
             this.bOOKRENTALSHOPDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.memberIdx = new System.Windows.Forms.ComboBox();
-            this.bookIdx = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrdRentalTbl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bOOKRENTALSHOPDBDataSet)).BeginInit();
@@ -80,6 +80,38 @@
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(165, 255);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(211, 25);
+            this.dateTimePicker2.TabIndex = 4;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(165, 206);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(211, 25);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // bookIdx
+            // 
+            this.bookIdx.FormattingEnabled = true;
+            this.bookIdx.Location = new System.Drawing.Point(165, 152);
+            this.bookIdx.Name = "bookIdx";
+            this.bookIdx.Size = new System.Drawing.Size(211, 23);
+            this.bookIdx.TabIndex = 2;
+            this.bookIdx.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged_1);
+            // 
+            // memberIdx
+            // 
+            this.memberIdx.FormattingEnabled = true;
+            this.memberIdx.Location = new System.Drawing.Point(165, 105);
+            this.memberIdx.Name = "memberIdx";
+            this.memberIdx.Size = new System.Drawing.Size(211, 23);
+            this.memberIdx.TabIndex = 1;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -100,6 +132,7 @@
             this.label9.Size = new System.Drawing.Size(37, 15);
             this.label9.TabIndex = 6;
             this.label9.Text = "저장";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -231,38 +264,6 @@
             // 
             this.bOOKRENTALSHOPDBDataSetBindingSource.DataSource = this.bOOKRENTALSHOPDBDataSet;
             this.bOOKRENTALSHOPDBDataSetBindingSource.Position = 0;
-            // 
-            // memberIdx
-            // 
-            this.memberIdx.FormattingEnabled = true;
-            this.memberIdx.Location = new System.Drawing.Point(165, 105);
-            this.memberIdx.Name = "memberIdx";
-            this.memberIdx.Size = new System.Drawing.Size(211, 23);
-            this.memberIdx.TabIndex = 1;
-            // 
-            // bookIdx
-            // 
-            this.bookIdx.FormattingEnabled = true;
-            this.bookIdx.Location = new System.Drawing.Point(165, 152);
-            this.bookIdx.Name = "bookIdx";
-            this.bookIdx.Size = new System.Drawing.Size(211, 23);
-            this.bookIdx.TabIndex = 2;
-            this.bookIdx.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged_1);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(165, 206);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(211, 25);
-            this.dateTimePicker1.TabIndex = 3;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(165, 255);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(211, 25);
-            this.dateTimePicker2.TabIndex = 4;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // RentalForm
             // 

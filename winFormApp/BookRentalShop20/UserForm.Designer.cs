@@ -33,16 +33,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.GrdUserTbl = new MetroFramework.Controls.MetroGrid();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.TxtuserID = new System.Windows.Forms.TextBox();
+            this.TxtId = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.BtnCancel = new MetroFramework.Controls.MetroButton();
             this.BtnSave = new MetroFramework.Controls.MetroButton();
             this.BtnNew = new MetroFramework.Controls.MetroButton();
             this.BtnDelete = new MetroFramework.Controls.MetroButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TxtId = new System.Windows.Forms.TextBox();
-            this.TxtuserID = new System.Windows.Forms.TextBox();
-            this.TxtPassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -126,6 +126,56 @@
             this.GrdUserTbl.Size = new System.Drawing.Size(374, 476);
             this.GrdUserTbl.TabIndex = 0;
             this.GrdUserTbl.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdDivTbl_CellClick);
+            this.GrdUserTbl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdUserTbl_CellContentClick);
+            // 
+            // TxtPassword
+            // 
+            this.TxtPassword.Location = new System.Drawing.Point(147, 95);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Size = new System.Drawing.Size(318, 25);
+            this.TxtPassword.TabIndex = 2;
+            // 
+            // TxtuserID
+            // 
+            this.TxtuserID.Location = new System.Drawing.Point(147, 59);
+            this.TxtuserID.Name = "TxtuserID";
+            this.TxtuserID.Size = new System.Drawing.Size(318, 25);
+            this.TxtuserID.TabIndex = 1;
+            // 
+            // TxtId
+            // 
+            this.TxtId.Location = new System.Drawing.Point(147, 19);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.ReadOnly = true;
+            this.TxtId.Size = new System.Drawing.Size(318, 25);
+            this.TxtId.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(40, 105);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "패스워드";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(40, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "아이디";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(40, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 15);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "순번";
             // 
             // BtnCancel
             // 
@@ -166,55 +216,6 @@
             this.BtnDelete.UseSelectable = true;
             this.BtnDelete.Visible = false;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 15);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "순번";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "아이디";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 15);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "패스워드";
-            // 
-            // TxtId
-            // 
-            this.TxtId.Location = new System.Drawing.Point(147, 19);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.ReadOnly = true;
-            this.TxtId.Size = new System.Drawing.Size(318, 25);
-            this.TxtId.TabIndex = 0;
-            // 
-            // TxtuserID
-            // 
-            this.TxtuserID.Location = new System.Drawing.Point(147, 59);
-            this.TxtuserID.Name = "TxtuserID";
-            this.TxtuserID.Size = new System.Drawing.Size(318, 25);
-            this.TxtuserID.TabIndex = 1;
-            // 
-            // TxtPassword
-            // 
-            this.TxtPassword.Location = new System.Drawing.Point(147, 95);
-            this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(318, 25);
-            this.TxtPassword.TabIndex = 2;
             // 
             // UserForm
             // 
